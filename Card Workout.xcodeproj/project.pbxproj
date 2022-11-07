@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BD8E5EB029124FD9003803EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E5EAF29124FD9003803EB /* AppDelegate.swift */; };
 		BD8E5EB229124FD9003803EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E5EB129124FD9003803EB /* SceneDelegate.swift */; };
-		BD8E5EB429124FD9003803EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E5EB329124FD9003803EB /* ViewController.swift */; };
 		BD8E5EB729124FD9003803EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8E5EB529124FD9003803EB /* Main.storyboard */; };
 		BD8E5EB929124FDA003803EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8E5EB829124FDA003803EB /* Assets.xcassets */; };
 		BD8E5EBC29124FDA003803EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8E5EBA29124FDA003803EB /* LaunchScreen.storyboard */; };
+		BD8E5EC429125001003803EB /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E5EC329125001003803EB /* CardSelectionVC.swift */; };
+		BDCF621F291959F200733C2D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF621E291959F200733C2D /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD8E5EAC29124FD9003803EB /* Card Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Card Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8E5EAF29124FD9003803EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8E5EB129124FD9003803EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD8E5EB329124FD9003803EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD8E5EB629124FD9003803EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD8E5EB829124FDA003803EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8E5EBB29124FDA003803EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8E5EBD29124FDA003803EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8E5EC329125001003803EB /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		BDCF621E291959F200733C2D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				BD8E5EAF29124FD9003803EB /* AppDelegate.swift */,
 				BD8E5EB129124FD9003803EB /* SceneDelegate.swift */,
-				BD8E5EB329124FD9003803EB /* ViewController.swift */,
+				BD8E5EC329125001003803EB /* CardSelectionVC.swift */,
 				BD8E5EB529124FD9003803EB /* Main.storyboard */,
 				BD8E5EB829124FDA003803EB /* Assets.xcassets */,
 				BD8E5EBA29124FDA003803EB /* LaunchScreen.storyboard */,
 				BD8E5EBD29124FDA003803EB /* Info.plist */,
+				BDCF621E291959F200733C2D /* Card.swift */,
 			);
 			path = "Card Workout";
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8E5EB429124FD9003803EB /* ViewController.swift in Sources */,
 				BD8E5EB029124FD9003803EB /* AppDelegate.swift in Sources */,
 				BD8E5EB229124FD9003803EB /* SceneDelegate.swift in Sources */,
+				BD8E5EC429125001003803EB /* CardSelectionVC.swift in Sources */,
+				BDCF621F291959F200733C2D /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +294,12 @@
 				DEVELOPMENT_TEAM = X7G5PFBCQ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Card Workout/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Card Workout";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +323,12 @@
 				DEVELOPMENT_TEAM = X7G5PFBCQ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Card Workout/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Card Workout";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
